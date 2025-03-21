@@ -1,0 +1,19 @@
+.{
+    .name = .stb_image,
+    .version = "2.30.0",
+    .minimum_zig_version = "0.14.0",
+    .fingerprint = 0xe5d3607812b2f58f,
+    .dependencies = .{
+        .stb_image = .{
+            .url = "git+https://github.com/nothings/stb#f0569113c93ad095470c54bf34a17b36646bbbb5",
+            .hash = "N-V-__8AAJopTgBuYbPPno6GEtqFAeIhKHyhTJcJ-Vp2FpHj",
+        },
+    },
+    .paths = .{
+        "LICENSE",
+        "README.md",
+        "build.zig",
+        "build.zig.zon",
+        "stb_image.c",
+    },
+}
