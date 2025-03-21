@@ -25,20 +25,22 @@ Finally, in your C++ file, you can use the library:
 #include <stb_image.h>
 
 int main() {
-  int width, height, channels;
-  uint8_t *data = stbi_load("image.png", &width, &height, &channels, 0);
-  if(!data) {
-    printf("Loading image failed!");
-    return 1;
-  }
-
-  printf("image info:\n"
-          "    file:     %s\n"
-          "    width:    %d\n"
-          "    height:   %d\n"
-          "    channels: %d\n",
-          "image.png", width, height, channels);
-  stbi_image_free(data);
-  return 0;
+    int width, height, channels;
+    uint8_t *data = stbi_load("image.png", &width, &height, &channels, 0);
+    if (!data) {
+        printf("Loading image failed!\n");
+    } else {
+        printf("image info:\n"
+               "    file:     %s\n"
+               "    width:    %d\n"
+               "    height:   %d\n"
+               "    channels: %d\n",
+            "image.png",
+            width,
+            height,
+            channels);
+        stbi_image_free(data);
+    }
+    return 0;
 }
 ```
