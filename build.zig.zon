@@ -1,7 +1,7 @@
 .{
     .name = .stb_image,
     .version = "2.30.0",
-    .minimum_zig_version = "0.14.0",
+    .minimum_zig_version = "0.15.0",
     .fingerprint = 0xe5d3607812b2f58f,
     .dependencies = .{
         .stb_image = .{
